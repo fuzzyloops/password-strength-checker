@@ -84,26 +84,3 @@ void outputScore(float score)
          std::cout << "Password strength: Very strong" << std::endl;
      }
 }
-
-int main()
-{
-
-    bool finished = false;
-
-    std::string password;
-    float score = 0;
-
-    while(!finished)
-    {
-        std::cout << "What password would you like to check the stength of?" << std::endl;
-        std::cin >> password;
-    
-        checkPasswordStrength(password, score);
-
-        outputScore(score);
-
-
-        std::cout << "\n";
-    }
-    
-}
